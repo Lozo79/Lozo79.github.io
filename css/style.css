@@ -1,0 +1,273 @@
+/*
+Project Name: GoRenzo Travel Blog
+Client: 
+Author: Lorenzo Patricio
+Developer @GA in DTLA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+.alignright {
+float: right;
+padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+float: left;
+padding: 0 10px 10px 0; 
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+
+.header {
+    padding: 30px;
+    font-size: 47px;
+    color:whitesmoke;
+    text-align: center;
+    background: url(../images/clouds.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.main {
+  background: url(../images/CoverpagePI.jpg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 25px;
+  color: rgb(59, 58, 58);
+}
+
+.post p {
+  font-size: 20px;
+  line-height: 1.333;
+  color: #606161;
+}
+
+h3{
+  font-weight: 200;
+  font-size: 20px;
+  color: rgb(59, 58, 58);
+}
+
+.aboutme {
+  background: url(../images/Lozo.jpg) no-repeat top center;
+  background-size: cover;
+  background-color: #aaa;
+  height: 350px;
+  width: 100%;
+  padding: 20px;
+
+  
+}
+
+.me p {
+  font-size: 20px;
+  line-height: 1.333;
+  color: #606161;
+}
+
+.country {
+    background-color: #aaa;
+    font-size: 15px;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+   }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* place next button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #111111;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #0c0c0c;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots for the photos */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.footer {
+    padding: 20px;
+    font-size: 47px;
+    color:white;
+    text-align: center;
+    background: url(../images/clouds2.jpg) no-repeat top center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.instagram {
+  color:rgb(121, 42, 6);
+  text-decoration:underline;
+  cursor:pointer;
+
+
+
+
+
